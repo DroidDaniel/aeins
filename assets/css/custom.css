@@ -1,0 +1,20 @@
+.btn-gradient.color-1 {
+    background-image: linear-gradient(to right, #5490c2, #2e6c9f, #1e3770, #5490c2) !important;
+}
+
+
+@media screen and (min-width:1024px) {
+    nav.navbar.bootsnav.navbar-fixed .logo-scrolled{
+        height: 60px !important;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    nav.navbar.bootsnav.navbar-fixed.navbar-transparent .logo-display, nav.navbar.bootsnav.navbar-fixed.no-background .logo-display {
+        height: 90px !important;
+    }
+}
+
+.logo-side img{
+    height: 50px;
+}
