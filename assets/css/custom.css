@@ -18,3 +18,13 @@
 .logo-side img{
     height: 50px;
 }
+
+
+@media screen and (max-width: 600px){
+    .service-box-style-01 .feature-box-square i, .service-box-style-01 .feature-box-square h1, .service-box-style-01 .feature-box-square h2, .service-box-style-01 .feature-box-square h3, .service-box-style-01 .feature-box-square h4, .service-box-style-01 .feature-box-square h5, .service-box-style-01 .feature-box-square h6, .service-box-style-01 .feature-box-square p {
+        color: #fff!important;
+    }
+    .service-box-style-01 .feature-box-square {
+        background: -webkit-linear-gradient(left, #1e3770 0%,#5490c2 100%);
+    }
+}
