@@ -33,7 +33,7 @@
     <!--== Loader End ==-->
 
     <!--== Wrapper Start ==-->
-    <div class="wrapper">
+    <div class="wrapper" id="home">
       <!--== Header Start ==-->
       <nav
         class="navbar navbar-default navbar-fixed navbar-transparent white bootsnav on no-full no-border"
@@ -110,26 +110,14 @@
               data-out="fadeOut"
             >
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                <a href="#home" class="dropdown-toggle" data-toggle="dropdown"
                   >Home</a
                 >
-                <!-- <ul class="dropdown-menu">
-                  <li><a href="creative-agency.html">Creative Agency</a></li>
-                  <li><a href="digital-agency.html">Digital Agency</a></li>
-                  <li><a href="minimal-agency.html">Minimal Agency</a></li>
-                  <li><a href="design-studio.html">Design Studio</a></li>
-                  <li><a href="landing.html">Landing</a></li>
-                  <li><a href="freelancer.html">Freelancer</a></li>
-                  <li><a href="business.html">Business</a></li>
-                  <li><a href="startups.html">Startups</a></li>
-                  <li><a href="fashion.html">Fashion</a></li>
-                  <li><a href="classic.html">Classic</a></li>
-                  <li><a href="architect.html">Architect</a></li>
-                  <li><a href="onepage.html">One Page</a></li>
-                </ul> -->
               </li>
               <li><a class="page-scroll" href="#whoWeAre">Who We Are</a></li>
-              <li><a class="page-scroll" href="#work">Works</a></li>
+              <li>
+                <a class="page-scroll" href="#oursolution">Our Solution</a>
+              </li>
               <li><a class="page-scroll" href="#team">Team</a></li>
               <li><a class="page-scroll" href="#about">About</a></li>
               <li><a class="page-scroll" href="#contact">Contacts</a></li>
@@ -146,13 +134,13 @@
           <a href="#" class="close-side"
             ><i class="icofont icofont-close"></i
           ></a>
-          <div class="widget mt-120">
+          <div class="widget mt-70">
             <ul class="link">
               <li class="link-item">
                 <a class="page-scroll" href="#whoWeAre">Who We Are</a>
               </li>
               <li class="link-item">
-                <a class="page-scroll" href="#work">Works</a>
+                <a class="page-scroll" href="#ourinnovation">Works</a>
               </li>
               <li class="link-item">
                 <a class="page-scroll" href="#team">Team</a>
@@ -360,6 +348,7 @@
                     <a
                       class="btn btn-light-outline btn-lg btn-square"
                       tabindex="0"
+                      href="#contact"
                       >Contact Us</a
                     >
                   </div>
@@ -540,6 +529,7 @@
                     <a
                       class="btn btn-light-outline btn-lg btn-square"
                       tabindex="0"
+                      href="#contact"
                       >Contact Us</a
                     >
                   </div>
@@ -569,10 +559,12 @@
                   >we bring your city into the future.</span
                 >
               </h4>
-              <a class="mt-20 btn btn-gradient color-1 btn-lg btn-square"
+              <a href="#ourinnovation" class="mt-20 btn btn-gradient color-1 btn-lg btn-square"
                 >Explore Our Innovations</a
               >
-              <a class="mt-20 btn btn-gradient color-1 btn-lg btn-square"
+              <a
+                href="#contact"
+                class="mt-20 btn btn-gradient color-1 btn-lg btn-square"
                 >Partner With Us Today</a
               >
             </div>
@@ -599,9 +591,7 @@
                     Lorem ipsum dolor sit amet, magna habemus ius ad
                   </h4>
                   <p class="mt-30">
-                    <a
-                      href="creative-agency.html"
-                      class="btn btn-light btn-xl btn-square"
+                    <a href="#contact" class="btn btn-light btn-xl btn-square"
                       >Let's Talk</a
                     >
                   </p>
@@ -614,14 +604,23 @@
       <!--== Call to Action End ==-->
 
       <!--== Who We Are Start ==-->
-      <section class="white-bg pb-60" id="whoWeAre">
+      <section class="white-bg pb-60" id="oursolution">
         <div class="container">
-          <div class="row mt-50">
+          <div class="row mt-0">
+            <h5 class="default-color mt-0 mb-50 text-uppercase text-center">
+              Our Solutions
+            </h5>
             <div
               class="col-md-4 feature-box text-left mb-50 col-sm-4 animation-move-top"
             >
               <div class="pull-left">
-                <i class="icofont icofont-pen-nib font-40px gradient-color"></i>
+                <span>
+                  <img
+                    src="assets/images/icons/solutions/trash-can.png"
+                    alt="icon"
+                    width="40"
+                  />
+                </span>
               </div>
               <div class="pull-right">
                 <h4 class="mt-0 font-600">AEINS Binovo Bin</h4>
@@ -651,9 +650,13 @@
               class="col-md-4 feature-box text-left mb-50 col-sm-4 animation-move-top"
             >
               <div class="pull-left">
-                <i
-                  class="icofont icofont-samsung-galaxy font-40px gradient-color"
-                ></i>
+                <span>
+                  <img
+                    src="assets/images/icons/solutions/electric-station.png"
+                    alt="icon"
+                    width="50"
+                  />
+                </span>
               </div>
               <div class="pull-right">
                 <h4 class="mt-0 font-600">EV Charging Stations</h4>
@@ -676,9 +679,13 @@
               class="col-md-4 feature-box text-left mb-50 col-sm-4 animation-move-top"
             >
               <div class="pull-left">
-                <i
-                  class="icofont icofont-light-bulb font-40px gradient-color"
-                ></i>
+                <span>
+                  <img
+                    src="assets/images/icons/solutions/brain-power.png"
+                    alt="icon"
+                    width="50"
+                  />
+                </span>
               </div>
               <div class="pull-right">
                 <h4 class="mt-0 font-600">AI-Integrated Apps</h4>
@@ -702,9 +709,13 @@
               class="col-md-4 feature-box text-left mb-50 col-sm-4 animation-move-top"
             >
               <div class="pull-left">
-                <i
-                  class="icofont icofont-molecule font-40px gradient-color"
-                ></i>
+                <span>
+                  <img
+                    src="assets/images/icons/solutions/display-board.png"
+                    alt="icon"
+                    width="50"
+                  />
+                </span>
               </div>
               <div class="pull-right">
                 <h4 class="mt-0 font-600">Smart Eco-Displays</h4>
@@ -724,7 +735,13 @@
               class="col-md-4 feature-box text-left mb-50 col-sm-4 animation-move-top"
             >
               <div class="pull-left">
-                <i class="icofont icofont-page font-40px gradient-color"></i>
+                <span>
+                  <img
+                    src="assets/images/icons/solutions/park.png"
+                    alt="icon"
+                    width="50"
+                  />
+                </span>
               </div>
               <div class="pull-right">
                 <h4 class="mt-0 font-600">Solar-Powered Smart Benches</h4>
@@ -926,12 +943,18 @@
             <div class="col-sm-6 col-xs-12 line xs-mb-30">
               <div class="icon-wrap white-bg">
                 <div class="icon">
-                  <i class="icon-tools default-color font-30px"></i>
+                  <span>
+                    <img
+                      src="assets/images/icons/mission/mission.png"
+                      alt="icon"
+                      width="60"
+                    />
+                  </span>
                 </div>
               </div>
               <div class="text-center white-color">
                 <h4 class="font-500">Mission</h4>
-                <p>
+                <p class="mvtext">
                   To deliver premium, AI-driven innovations that redefine urban
                   infrastructure while aligning with global sustainability
                   goals.
@@ -941,12 +964,18 @@
             <div class="col-sm-6 col-xs-12 line xs-mb-30">
               <div class="icon-wrap white-bg">
                 <div class="icon">
-                  <i class="icon-globe default-color font-30px"></i>
+                  <span>
+                    <img
+                      src="assets/images/icons/mission/leadership.png"
+                      alt="icon"
+                      width="60"
+                    />
+                  </span>
                 </div>
               </div>
               <div class="text-center white-color">
                 <h4 class="font-500">Vision</h4>
-                <p>
+                <p class="mvtext">
                   To lead the global urban revolution by integrating modern
                   technology, sustainability, and convenience, building
                   connected and eco-conscious cities for future generations.
@@ -962,11 +991,20 @@
       <section class="white-bg pb-60">
         <div class="container">
           <div class="row service-box-style-01">
+            <h5 class="default-color mt-0 mb-50 text-uppercase text-center">
+              Why Choose AEINS Connect
+            </h5>
             <div class="col-md-4 col-sm-6">
               <div
                 class="feature-box text-left mb-50 feature-box-square center-feature"
               >
-                <i class="icon-tools-2 font-40px default-color"></i>
+                <span class="mb-10">
+                  <img
+                    src="assets/images/icons/choose/creative.png"
+                    alt="icon"
+                    width="60"
+                  />
+                </span>
                 <h4 class="mt-0 font-600">Innovation-Driven</h4>
                 <p class="font-400 mt-20">
                   Advanced AI and technology integrated into every solution.
@@ -977,7 +1015,13 @@
               <div
                 class="feature-box text-left mb-50 feature-box-square center-feature"
               >
-                <i class="icon-anchor font-40px default-color"></i>
+                <span>
+                  <img
+                    src="assets/images/icons/choose/plant.png"
+                    alt="icon"
+                    width="60"
+                  />
+                </span>
                 <h4 class="mt-0 font-600">Eco-Friendly</h4>
                 <p class="font-400 mt-20">
                   Sustainability lies at the heart of all our innovations.
@@ -988,7 +1032,13 @@
               <div
                 class="feature-box text-left mb-50 feature-box-square center-feature"
               >
-                <i class="icon-phone font-40px default-color"></i>
+                <span class="mb-10">
+                  <img
+                    src="assets/images/icons/choose/target-audience.png"
+                    alt="icon"
+                    width="60"
+                  />
+                </span>
                 <h4 class="mt-0 font-600">User-Focused</h4>
                 <p class="font-400 mt-20">
                   Seamless, modern solutions designed for efficiency and
@@ -1000,19 +1050,30 @@
               <div
                 class="feature-box text-left mb-50 feature-box-square center-feature"
               >
-                <i class="icon-laptop font-40px default-color"></i>
+                <span class="mb-10">
+                  <img
+                    src="assets/images/icons/choose/urbanization.png"
+                    alt="icon"
+                    width="60"
+                  />
+                </span>
                 <h4 class="mt-0 font-600">Scalable Solutions</h4>
                 <p class="font-400 mt-20">
                   Flexible and adaptable to urban challenges worldwide.
                 </p>
-                <p>&nbsp;</p>
               </div>
             </div>
             <div class="col-md-4 col-sm-6">
               <div
                 class="feature-box text-left mb-50 feature-box-square center-feature"
               >
-                <i class="icon-adjustments font-40px default-color"></i>
+                <span class="mb-10">
+                  <img
+                    src="assets/images/icons/choose/checked.png"
+                    alt="icon"
+                    width="60"
+                  />
+                </span>
                 <h4 class="mt-0 font-600">Premium Quality</h4>
                 <p class="font-400 mt-20">
                   We deliver high-end products with exceptional craftsmanship
@@ -1024,7 +1085,13 @@
               <div
                 class="feature-box text-left mb-50 feature-box-square center-feature"
               >
-                <i class="icon-linegraph font-40px default-color"></i>
+                <span class="mb-10">
+                  <img
+                    src="assets/images/icons/choose/customer-service.png"
+                    alt="icon"
+                    width="60"
+                  />
+                </span>
                 <h4 class="mt-0 font-600">Comprehensive Support</h4>
                 <p class="font-400 mt-20">
                   Dedicated to providing outstanding service and tailored
@@ -1048,68 +1115,18 @@
             <div class="col-md-6 pt-50 pb-50">
               <img
                 class="img-responsive"
-                src="assets/images/about-video-img-2.jpg"
+                src="assets/images/earth.jpg"
                 alt=""
               />
             </div>
             <div class="col-md-6 pt-50 pb-50">
               <div class="row chart-style-03 xs-mt-30">
-                <div
-                  class="col-md-4 col-sm-6 col-xs-12 sm-mb-30 xs-mb-30 text-center"
-                >
-                  <div class="chart-circle">
-                    <span class="chart-03" data-percent="95">
-                      <span class="percent dark-color font-20px font-700"
-                        >95</span
-                      >
-                      <canvas height="140" width="140"></canvas
-                    ></span>
-                  </div>
-                  <div class="chart-title">
-                    <span class="white-color font-18px font-700">India</span>
-                  </div>
-                </div>
-                <div
-                  class="col-md-4 col-sm-6 col-xs-12 sm-mb-30 xs-mb-30 text-center"
-                >
-                  <div class="chart-circle">
-                    <span class="chart-03" data-percent="66">
-                      <span class="percent dark-color font-20px font-700"
-                        >66</span
-                      >
-                      <canvas height="140" width="140"></canvas
-                    ></span>
-                  </div>
-                  <div class="chart-title">
-                    <span class="white-color font-18px font-700"
-                      >Middle East</span
-                    >
-                  </div>
-                </div>
-                <div
-                  class="col-md-4 col-sm-6 col-xs-12 sm-mb-30 xs-mb-30 text-center"
-                >
-                  <div class="chart-circle">
-                    <span class="chart-03" data-percent="85">
-                      <span class="percent dark-color font-20px font-700"
-                        >85</span
-                      >
-                      <canvas height="140" width="140"></canvas
-                    ></span>
-                  </div>
-                  <div class="chart-title">
-                    <span class="white-color font-18px font-700"
-                      >Europe & North America</span
-                    >
-                  </div>
-                </div>
-
                 <div class="col-md-12">
                   <div class="bs-left-space white-color">
-                    <h5 class="mt-40 font-700">
+                    <h3 class="mt-40 font-700">
                       Market & Opportunities Global Expansion Potential
-                    </h5>
-                    <ul>
+                    </h3>
+                    <ul class="countryul mt-30">
                       <li class="font-400 mb-10">
                         <span class="gradient-color">India</span> Rapid smart
                         city projects backed by government initiatives.
@@ -1135,134 +1152,88 @@
       <!--== Market & Opportunities End ==-->
 
       <!--== Portfolio Start ==-->
-      <!-- <section class="white-bg dark-block pt-0 pb-0" id="work">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div id="portfolio-gallery" class="cbp">
-                <div class="cbp-item branding col-md-6 col-sm-6 col-xs-12">
-                  <a href="creative-portfolio.html" class="cbp-caption">
-                    <div class="cbp-caption-defaultWrap">
-                      <img src="assets/images/portfolio/grid/23.jpg" alt="" />
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                      <div class="cbp-l-caption-alignCenter">
-                        <div class="cbp-l-caption-body">
-                          <div
-                            class="cbp-l-caption-title white-color font-500 text-uppercase"
-                          >
-                            Konferanse
-                          </div>
-                          <div class="cbp-l-caption-desc white-color font-14px">
-                            Visual Identity
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-                <div
-                  class="cbp-item print web-design col-md-3 col-sm-6 col-xs-12"
-                >
-                  <a href="creative-portfolio.html" class="cbp-caption">
-                    <div class="cbp-caption-defaultWrap">
-                      <img src="assets/images/portfolio/grid/24.jpg" alt="" />
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                      <div class="cbp-l-caption-alignCenter">
-                        <div class="cbp-l-caption-body">
-                          <div
-                            class="cbp-l-caption-title white-color font-500 text-uppercase"
-                          >
-                            Modern East
-                          </div>
-                          <div class="cbp-l-caption-desc white-color font-14px">
-                            Art Direction
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-                <div
-                  class="cbp-item print advertising col-md-3 col-sm-6 col-xs-12"
-                >
-                  <a href="creative-portfolio.html" class="cbp-caption">
-                    <div class="cbp-caption-defaultWrap">
-                      <img src="assets/images/portfolio/grid/25.jpg" alt="" />
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                      <div class="cbp-l-caption-alignCenter">
-                        <div class="cbp-l-caption-body">
-                          <div
-                            class="cbp-l-caption-title white-color font-500 text-uppercase"
-                          >
-                            Formdusche Berlin
-                          </div>
-                          <div class="cbp-l-caption-desc white-color font-14px">
-                            Print Media
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-                <div
-                  class="cbp-item branding photography col-md-6 col-sm-6 col-xs-12"
-                >
-                  <a href="creative-portfolio.html" class="cbp-caption">
-                    <div class="cbp-caption-defaultWrap">
-                      <img src="assets/images/portfolio/grid/28.jpg" alt="" />
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                      <div class="cbp-l-caption-alignCenter">
-                        <div class="cbp-l-caption-body">
-                          <div
-                            class="cbp-l-caption-title white-color font-500 text-uppercase"
-                          >
-                            Toormix Design
-                          </div>
-                          <div class="cbp-l-caption-desc white-color font-14px">
-                            Branding
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-                <div
-                  class="cbp-item branding web-design col-md-6 col-sm-6 col-xs-12"
-                >
-                  <a href="creative-portfolio.html" class="cbp-caption">
-                    <div class="cbp-caption-defaultWrap">
-                      <img src="assets/images/portfolio/grid/29.jpg" alt="" />
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                      <div class="cbp-l-caption-alignCenter">
-                        <div class="cbp-l-caption-body">
-                          <div
-                            class="cbp-l-caption-title white-color font-500 text-uppercase"
-                          >
-                            Mohawk Maker
-                          </div>
-                          <div class="cbp-l-caption-desc white-color font-14px">
-                            Web Design
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
+      <section class="section" id="ourinnovation">
+        <h5 class="default-color mt-0 mb-50 text-uppercase text-center">
+          Our Innovations
+        </h5>
+        <div class="grid">
+          <div class="item">
+            <div class="item__details">
+              jelly-o brownie sweet
+            </div>
+          </div>
+          <div class="item item--large">
+            <div class="item__details">
+              Muffin jelly gingerbread 
+            </div>
+          </div>
+          <div class="item item--medium">
+            <div class="item__details">
+              sesame snaps chocolate
+            </div>
+          </div>
+          <div class="item item--large">
+            <div class="item__details">
+              Oat cake
+            </div>
+          </div>
+          <div class="item item--full">
+            <div class="item__details">
+               jujubes cheesecake
+            </div>
+          </div>
+          <div class="item item--medium">
+            <div class="item__details">
+              Dragée pudding brownie
+            </div>
+          </div>
+          <div class="item item--large">
+            <div class="item__details">
+              Oat cake
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__details">
+              powder toffee
+            </div>
+          </div>
+          <div class="item item--medium">
+            <div class="item__details">
+              pudding cheesecake
+            </div>
+          </div>
+          <div class="item item--large">
+            <div class="item__details">
+              toffee bear claw 
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__details">
+              cake cookie croissant
+            </div>
+          </div>
+          <div class="item item--medium">
+            <div class="item__details">
+              liquorice sweet roll
+            </div>
+          </div>
+          <div class="item item--medium">
+            <div class="item__details">
+              chocolate marzipan
+            </div>
+          </div>
+          <div class="item item--large">
+            <div class="item__details">
+              danish dessert lollipop
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__details">
+              sugar plum dragée
             </div>
           </div>
         </div>
-      </section> -->
-
+      </div>
       <!--== Portfolio End ==-->
 
       <!--== Our Team Start ==-->
@@ -1283,30 +1254,7 @@
             <div class="col-md-3 col-sm-6 col-xs-12 team-member-container">
               <div class="team-member">
                 <div class="team-thumb">
-                  <img src="assets/images/team/team-13.jpg" alt="" />
-                  <ul class="member-icons">
-                    <li class="social-icon">
-                      <a
-                        href="#"
-                        class="icofont icofont-social-facebook"
-                        tabindex="0"
-                      ></a>
-                    </li>
-                    <li class="social-icon">
-                      <a
-                        href="#"
-                        class="icofont icofont-social-twitter"
-                        tabindex="0"
-                      ></a>
-                    </li>
-                    <li class="social-icon">
-                      <a
-                        href="#"
-                        class="icofont icofont-social-behance"
-                        tabindex="0"
-                      ></a>
-                    </li>
-                  </ul>
+                  <img src="assets/images/team/team1.jpg" alt="" />
                 </div>
                 <div class="member-info mt-10 mb-10">
                   <h3>Name</h3>
@@ -1320,29 +1268,6 @@
               <div class="team-member">
                 <div class="team-thumb">
                   <img src="assets/images/team/team-14.jpg" alt="" />
-                  <ul class="member-icons">
-                    <li class="social-icon">
-                      <a
-                        href="#"
-                        class="icofont icofont-social-facebook"
-                        tabindex="0"
-                      ></a>
-                    </li>
-                    <li class="social-icon">
-                      <a
-                        href="#"
-                        class="icofont icofont-social-twitter"
-                        tabindex="0"
-                      ></a>
-                    </li>
-                    <li class="social-icon">
-                      <a
-                        href="#"
-                        class="icofont icofont-social-behance"
-                        tabindex="0"
-                      ></a>
-                    </li>
-                  </ul>
                 </div>
                 <div class="member-info mt-10 mb-10">
                   <h3>Name</h3>
@@ -1355,30 +1280,7 @@
             <div class="col-md-3 col-sm-6 col-xs-12 team-member-container">
               <div class="team-member">
                 <div class="team-thumb">
-                  <img src="assets/images/team/team-15.jpg" alt="" />
-                  <ul class="member-icons">
-                    <li class="social-icon">
-                      <a
-                        href="#"
-                        class="icofont icofont-social-facebook"
-                        tabindex="0"
-                      ></a>
-                    </li>
-                    <li class="social-icon">
-                      <a
-                        href="#"
-                        class="icofont icofont-social-twitter"
-                        tabindex="0"
-                      ></a>
-                    </li>
-                    <li class="social-icon">
-                      <a
-                        href="#"
-                        class="icofont icofont-social-behance"
-                        tabindex="0"
-                      ></a>
-                    </li>
-                  </ul>
+                  <img src="assets/images/team/team2.jpg" alt="" />
                 </div>
                 <div class="member-info mt-10 mb-10">
                   <h3>Name</h3>
@@ -1392,29 +1294,6 @@
               <div class="team-member">
                 <div class="team-thumb">
                   <img src="assets/images/team/team-16.jpg" alt="" />
-                  <ul class="member-icons">
-                    <li class="social-icon">
-                      <a
-                        href="#"
-                        class="icofont icofont-social-facebook"
-                        tabindex="0"
-                      ></a>
-                    </li>
-                    <li class="social-icon">
-                      <a
-                        href="#"
-                        class="icofont icofont-social-twitter"
-                        tabindex="0"
-                      ></a>
-                    </li>
-                    <li class="social-icon">
-                      <a
-                        href="#"
-                        class="icofont icofont-social-behance"
-                        tabindex="0"
-                      ></a>
-                    </li>
-                  </ul>
                 </div>
                 <div class="member-info mt-10 mb-10">
                   <h3>Name</h3>
@@ -1447,18 +1326,27 @@
                 </p>
                 <p>
                   <a href="mailto:aeinsconnectpvtltd@gmail.com"
-                    ><span class="gradient-color">Email</span>
+                    ><span class="gradient-color">
+                      <i class="icofont icofont-envelope gradient-color"></i>
+                    </span>
                     aeinsconnectpvtltd@gmail.com</a
                   >
                 </p>
                 <p>
                   <a href="tel:+917012910798"
-                    ><span class="gradient-color">Phone</span> 7012910798</a
+                    ><span class="gradient-color">
+                      <i class="icofont icofont-ui-call gradient-color"></i>
+                    </span>
+                    7012910798</a
                   >
                 </p>
                 <p>
                   <a href="#"
-                    ><span class="gradient-color">Office Locations</span>
+                    ><span class="gradient-color">
+                      <i
+                        class="icofont icofont-location-pin gradient-color"
+                      ></i>
+                    </span>
                     Trivandrum & Kochi, Kerala, India</a
                   >
                 </p>
@@ -1590,11 +1478,11 @@
                 <div class="widget widget-links">
                   <h5 class="widget-title">Quick Links</h5>
                   <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About US</a></li>
-                    <li><a href="#">Our Solutions</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About US</a></li>
+                    <li><a href="#oursolution">Our Solutions</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#team">Our Team</a></li>
                   </ul>
                 </div>
               </div>
@@ -1623,7 +1511,7 @@
             <div class="row">
               <div class="col-md-6 col-xs-12">
                 <div class="copy-right text-left">
-                  © 2019 <span class="gradient-color">AEINS Connect.</span> All
+                  © 2025 <span class="gradient-color">AEINS Connect.</span> All
                   rights reserved
                 </div>
               </div>
@@ -1634,12 +1522,6 @@
                   </li>
                   <li>
                     <a href="#" class="icofont icofont-social-twitter"></a>
-                  </li>
-                  <li>
-                    <a href="#" class="icofont icofont-social-behance"></a>
-                  </li>
-                  <li>
-                    <a href="#" class="icofont icofont-social-dribble"></a>
                   </li>
                   <li>
                     <a href="#" class="icofont icofont-social-linkedin"></a>
