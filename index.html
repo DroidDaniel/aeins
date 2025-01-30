@@ -1382,63 +1382,80 @@
             <div class="col-xl-6 ps-xl-4">
               <h3 class="mt-n2 mb-30 text-center">Make An Appointment</h3>
               <form
-                action="mail.php"
+                class="appoitment-form"
+                action="https://docs.google.com/forms/u/0/d/1GmLukvpOnHv6p76a8OpK6HdEtNj-pC4OAe1g_6qls0c/previewResponse"
                 method="POST"
-                class="appoitment-form ajax-contact"
+                target="hidden_iframe"
+                onsubmit="return validateForm();"
               >
                 <div class="row">
                   <div class="form-group col-sm-6">
                     <input
                       type="text"
                       class="form-control"
-                      name="name"
+                      name="entry.2006080830"
                       id="name"
                       placeholder="Enter Your Name"
+                      required
                     />
                   </div>
                   <div class="form-group col-sm-6">
                     <input
                       type="email"
                       class="form-control"
-                      name="email"
+                      name="entry.1378344297"
                       id="email"
                       placeholder="Enter Your Email"
+                      required
                     />
                   </div>
                   <div class="form-group col-sm-6">
                     <input
                       type="text"
                       class="form-control"
-                      name="subject"
+                      name="entry.759695173"
                       id="subject"
                       placeholder="Subject"
+                      required
                     />
                   </div>
                   <div class="form-group col-sm-6">
                     <input
                       type="tel"
                       class="form-control"
-                      name="number"
+                      name="entry.2008722928"
                       id="number"
                       placeholder="Phone Number"
+                      pattern="[0-9]{10}"
+                      required
                     />
                   </div>
                   <div class="form-group col-12">
                     <textarea
-                      name="message"
+                      name="entry.1261267941"
                       id="message"
                       cols="30"
                       rows="3"
                       class="form-control"
                       placeholder="Write Your Message"
+                      required
                     ></textarea>
                   </div>
                   <div class="form-btn col-12">
-                    <button class="th-btn w-100">MAKE AN APPOINTMENT</button>
+                    <button type="submit" class="th-btn w-100">
+                      MAKE AN APPOINTMENT
+                    </button>
                   </div>
                 </div>
                 <p class="form-messages mb-0 mt-3"></p>
               </form>
+
+              <!-- Hidden iframe to prevent page reload -->
+              <iframe
+                name="hidden_iframe"
+                style="display: none"
+                onload="showSuccessMessage();"
+              ></iframe>
             </div>
           </div>
         </div>
