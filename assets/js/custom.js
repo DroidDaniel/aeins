@@ -2,9 +2,9 @@ $(document).ready(function () {
   $(".customer-logos").slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 1500,
-    arrows: false,
+    arrows: true,
     dots: false,
     pauseOnHover: false,
     responsive: [

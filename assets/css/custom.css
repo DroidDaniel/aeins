@@ -685,3 +685,122 @@ nav.navbar.bootsnav.navbar-fixed .logo-scrolled{
   justify-content: center;
 }
 
+/***navbar****/
+nav.navbar.bootsnav.navbar-fixed{
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+nav.navbar.bootsnav ul.nav > li > a,
+nav.navbar.bootsnav .navbar-toggle{
+  color: #fff;
+}
+
+.tp-caption{
+  font-family: 'CG Omega' !important;
+}
+
+.contact-feature .icon-btn,
+.th-btn{
+  background-color: #77c4ff !important;
+}
+
+.footer .contact-detail li i.gradient-color,
+.copy-right span.gradient-color{
+  -webkit-text-fill-color: #77c4ff !important;
+}
+
+.social-media{
+  display: flex;
+  gap: 30px;
+}
+
+.social-media li a{
+  color: #fff;
+  transition: all .3sec ease;
+}
+
+.social-media li a:hover{
+  color: #77c4ff;
+}
+
+.powerd_text a{
+  color: #f7ab00;
+  text-decoration: none;
+}
+
+.powerd_text a:hover{
+  color: #f7ab00;
+  text-decoration: underline !important;
+}
+
+.slick-dots{
+  bottom: 0;
+}
+
+.slick-dots button{
+  padding: 5px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+
+.slick-prev, .slick-next{
+  font-size: 0px;
+  width: 36px;
+  height: 36px;
+  border-radius: 100px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slick-next:before {
+  background-image: url('../images/icons/slick/right-arrow.png'); 
+}
+
+.slick-prev:before {
+  background-image: url('../images/icons/slick/left-arrow.png');
+}
+
+.highlight{
+  color: #77c4ff;
+  font-weight: bold; 
+  font-size: 18px;
+}
+
+section#team{
+  padding-bottom: 50px;
+}
+
+section.customer-logos{
+  padding: 0 0 50px 0;
+}
+
+.team-desig{
+  text-align: center;
+}
+
+.team-content{
+  background-color: #011257;
+  color: #fff;
+}
+
+.box-title{
+  color: #fff;
+}
