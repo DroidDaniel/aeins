@@ -784,7 +784,6 @@ nav.navbar.bootsnav .navbar-toggle{
 }
 
 .highlight{
-  color: #77c4ff;
   font-weight: bold; 
   font-size: 18px;
 }
@@ -878,4 +877,13 @@ nav .side{
 
 .error-border {
   border: 2px solid #ff3333;
+}
+
+#contact-sec .sub-title,
+#contact-sec .text-theme{
+  color: #77c4ff !important; 
+}
+
+.ceobox{
+  background-color: #77c4ff;
 }

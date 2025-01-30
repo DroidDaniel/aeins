@@ -7,6 +7,7 @@ $(document).ready(function () {
     arrows: true,
     dots: false,
     pauseOnHover: false,
+    infinite: false,
     responsive: [
       {
         breakpoint: 768,
