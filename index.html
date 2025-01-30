@@ -1382,11 +1382,11 @@
             <div class="col-xl-6 ps-xl-4">
               <h3 class="mt-n2 mb-30 text-center">Make An Appointment</h3>
               <form
+                id="cs-form"
                 class="appoitment-form"
-                action="https://docs.google.com/forms/u/0/d/1GmLukvpOnHv6p76a8OpK6HdEtNj-pC4OAe1g_6qls0c/previewResponse"
+                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd7LSfb10nSuol9lIolg2KqGcG5RRBbXITzuIB-wJ60Skx2Yg/formResponse"
                 method="POST"
-                target="hidden_iframe"
-                onsubmit="return validateForm();"
+                target="_self"
               >
                 <div class="row">
                   <div class="form-group col-sm-6">
@@ -1447,14 +1447,21 @@
                     </button>
                   </div>
                 </div>
-                <p class="form-messages mb-0 mt-3"></p>
+                <p
+                  class="form-messages mb-0 mt-3"
+                  id="successMessage"
+                  style="display: none; color: green"
+                >
+                  Thank you! Your appointment request has been submitted
+                  successfully.
+                </p>
               </form>
 
-              <!-- Hidden iframe to prevent page reload -->
+              <!-- Hidden iframe to prevent redirection -->
               <iframe
                 name="hidden_iframe"
+                id="hidden_iframe"
                 style="display: none"
-                onload="showSuccessMessage();"
               ></iframe>
             </div>
           </div>
@@ -1619,5 +1626,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <!--== Javascript Plugins End ==-->
+
+    <script></script>
+    <style></style>
   </body>
 </html>

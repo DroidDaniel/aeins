@@ -24,36 +24,72 @@ $(document).ready(function () {
   });
 });
 
-/***Form Validation */
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("cs-form");
 
-function validateForm() {
-  var name = document.getElementById("name").value.trim();
-  var email = document.getElementById("email").value.trim();
-  var subject = document.getElementById("subject").value.trim();
-  var number = document.getElementById("number").value.trim();
-  var message = document.getElementById("message").value.trim();
-  var errorMessage = "";
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    let isValid = true;
 
-  // Validation
-  if (name === "") errorMessage += "Name is required.\n";
-  if (email === "" || !email.includes("@"))
-    errorMessage += "Valid email is required.\n";
-  if (subject === "") errorMessage += "Subject is required.\n";
-  if (number === "" || number.length !== 10 || isNaN(number))
-    errorMessage += "Valid 10-digit phone number is required.\n";
-  if (message === "") errorMessage += "Message cannot be empty.\n";
+    // Clear previous error messages
+    const errorMessages = form.querySelectorAll(".error-message");
+    errorMessages.forEach((errorMessage) => errorMessage.remove());
 
-  if (errorMessage !== "") {
-    alert(errorMessage);
-    return false;
-  }
+    // Validate all fields
+    const fields = form.querySelectorAll("input, select, textarea");
+    fields.forEach((field) => {
+      field.classList.remove("error-border");
+      if (!field.checkValidity()) {
+        isValid = false;
+        field.classList.add("error-border");
 
-  return true;
-}
+        // Show error message
+        const errorMessage = document.createElement("div");
+        errorMessage.className = "error-message";
+        errorMessage.style.color = "red";
+        errorMessage.textContent = "This field is required.";
+        field.parentNode.appendChild(errorMessage);
+      }
 
-function showSuccessMessage() {
-  var messageBox = document.querySelector(".form-messages");
-  messageBox.innerHTML =
-    "Your appointment request has been submitted successfully!";
-  messageBox.style.color = "green";
-}
+      // Validate email format
+      if (
+        field.type === "email" &&
+        !field.value.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)
+      ) {
+        isValid = false;
+        field.classList.add("error-border");
+
+        // Show email error message
+        const errorMessage = document.createElement("div");
+        errorMessage.className = "error-message";
+        errorMessage.style.color = "red";
+        errorMessage.textContent = "Please enter a valid email address.";
+        field.parentNode.appendChild(errorMessage);
+      }
+    });
+
+    if (isValid) {
+      // Submit form data to Google Forms
+      fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        mode: "no-cors",
+      })
+        .then(() => {
+          // Clear form fields
+          form.reset();
+
+          // Show success message
+          const successMessage = document.createElement("div");
+          successMessage.className = "success-message";
+          successMessage.style.color = "green";
+          successMessage.textContent =
+            "Your message has been sent successfully!";
+          form.appendChild(successMessage);
+        })
+        .catch((error) => {
+          console.error("Error!", error.message);
+        });
+    }
+  });
+});

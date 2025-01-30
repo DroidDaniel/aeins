@@ -875,3 +875,7 @@ nav .side{
 .attr-nav{
   border: none;
 }
+
+.error-border {
+  border: 2px solid #ff3333;
+}
