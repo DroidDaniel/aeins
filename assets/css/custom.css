@@ -863,3 +863,10 @@ nav .side{
   margin: 0;
   font-weight: lighter !important;
 }
+
+.side-menu .icofont-navigation-menu{
+  color: #fff;
+}
+.attr-nav{
+  border: none;
+}
