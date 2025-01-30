@@ -747,16 +747,21 @@ nav.navbar.bootsnav .navbar-toggle{
   border-radius: 3px;
 }
 
-.slick-prev, .slick-next{
+.slick-prev, 
+.slick-next{
   font-size: 0px;
   width: 36px;
   height: 36px;
   border-radius: 100px;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
+  background: #4787b9;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.slick-prev:hover, 
+.slick-next:hover{
+  background: #4787b9;
 }
 
 .slick-next:before,
