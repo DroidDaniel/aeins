@@ -804,3 +804,12 @@ section.customer-logos{
 .box-title{
   color: #fff;
 }
+
+nav .side{
+  height: 100vh;
+}
+
+.side ul.social-media li a:hover, 
+.side .widget ul.social-media li a:focus{
+  color: #77c4ff;
+}
