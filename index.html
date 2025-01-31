@@ -40,27 +40,6 @@
       <nav
         class="navbar navbar-default navbar-fixed navbar-transparent white bootsnav on no-full no-border"
       >
-        <!--== Start Top Search ==-->
-        <div class="fullscreen-search-overlay" id="search-overlay">
-          <a href="#" class="fullscreen-close" id="fullscreen-close-button"
-            ><i class="icofont icofont-close"></i
-          ></a>
-          <div id="fullscreen-search-wrapper">
-            <form method="get" id="fullscreen-searchform">
-              <input
-                type="text"
-                value=""
-                placeholder="Type and hit Enter..."
-                id="fullscreen-search-input"
-                class="search-bar-top"
-              />
-              <i class="fullscreen-search-icon icofont icofont-search">
-                <input value="" type="submit" />
-              </i>
-            </form>
-          </div>
-        </div>
-        <!--== End Top Search ==-->
         <div class="container-fluid">
           <!--== Start Atribute Navigation ==-->
           <div class="attr-nav hidden-xs sm-display-none">
@@ -111,10 +90,8 @@
               data-in="fadeIn"
               data-out="fadeOut"
             >
-              <li class="dropdown">
-                <a href="#home" class="dropdown-toggle" data-toggle="dropdown"
-                  >Home</a
-                >
+              <li>
+                <a href="#home" class="page-scroll">Home</a>
               </li>
               <li><a class="page-scroll" href="#whoWeAre">Who We Are</a></li>
               <li>
@@ -1315,7 +1292,7 @@
               <img src="assets/images/team/vrindha-og.png" />
               <div class="team-content">
                 <h3 class="box-title">Vrindha OG</h3>
-                <span class="team-desig">Fundraising</span>
+                <span class="team-desig">Fundraising Director</span>
               </div>
             </div>
           </section>
@@ -1381,7 +1358,7 @@
               <form
                 id="cs-form"
                 class="appoitment-form"
-                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd7LSfb10nSuol9lIolg2KqGcG5RRBbXITzuIB-wJ60Skx2Yg/formResponse"
+                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdOsL8Gyc5qolv247ZOrmOlu3oB88FD3WsA2XDGVwb8f-hUCw/formResponse"
                 method="POST"
                 target="_self"
               >
@@ -1390,7 +1367,7 @@
                     <input
                       type="text"
                       class="form-control"
-                      name="entry.2006080830"
+                      name="entry.1328293489"
                       id="name"
                       placeholder="Enter Your Name"
                       required
@@ -1400,7 +1377,7 @@
                     <input
                       type="email"
                       class="form-control"
-                      name="entry.1378344297"
+                      name="entry.2009634431"
                       id="email"
                       placeholder="Enter Your Email"
                       required
@@ -1410,7 +1387,7 @@
                     <input
                       type="text"
                       class="form-control"
-                      name="entry.759695173"
+                      name="entry.1053101984"
                       id="subject"
                       placeholder="Subject"
                       required
@@ -1420,7 +1397,7 @@
                     <input
                       type="tel"
                       class="form-control"
-                      name="entry.2008722928"
+                      name="entry.1757361672"
                       id="number"
                       placeholder="Phone Number"
                       pattern="[0-9]{10}"
@@ -1429,7 +1406,7 @@
                   </div>
                   <div class="form-group col-12">
                     <textarea
-                      name="entry.1261267941"
+                      name="entry.1979387869"
                       id="message"
                       cols="30"
                       rows="3"
@@ -1480,19 +1457,19 @@
                     partnering, investing, or learning more, reach out to us
                     today.
                   </p>
-                </div>
-                <div class="socialwrapper">
-                  <ul class="social-media">
-                    <li>
-                      <a href="#" class="icofont icofont-social-facebook"></a>
-                    </li>
-                    <li>
-                      <a href="#" class="icofont icofont-social-twitter"></a>
-                    </li>
-                    <li>
-                      <a href="#" class="icofont icofont-social-linkedin"></a>
-                    </li>
-                  </ul>
+                  <div class="socialwrapper">
+                    <ul class="social-media">
+                      <li>
+                        <a href="#" class="icofont icofont-social-facebook"></a>
+                      </li>
+                      <li>
+                        <a href="#" class="icofont icofont-social-twitter"></a>
+                      </li>
+                      <li>
+                        <a href="#" class="icofont icofont-social-linkedin"></a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
 
@@ -1500,11 +1477,17 @@
                 <div class="widget widget-links">
                   <h5 class="widget-title">Quick Links</h5>
                   <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About US</a></li>
-                    <li><a href="#oursolution">Our Solutions</a></li>
-                    <li><a href="#contact-sec">Contact</a></li>
-                    <li><a href="#team">Our Team</a></li>
+                    <li><a class="page-scroll" href="#home">Home</a></li>
+                    <li><a class="page-scroll" href="#about">About US</a></li>
+                    <li>
+                      <a class="page-scroll" href="#oursolution"
+                        >Our Solutions</a
+                      >
+                    </li>
+                    <li>
+                      <a class="page-scroll" href="#contact-sec">Contact</a>
+                    </li>
+                    <li><a class="page-scroll" href="#team">Our Team</a></li>
                   </ul>
                 </div>
               </div>
@@ -1517,7 +1500,7 @@
                         <i
                           class="icofont icofont-location-pin gradient-color"
                         ></i>
-                        Kochi & Bangalore, Kerala, India
+                        Kochi & Bangalore - India
                       </li>
                       <li>
                         <i class="icofont icofont-ui-call gradient-color"></i>
@@ -1543,7 +1526,7 @@
                   rights reserved
                 </div>
               </div>
-              <div class="col-md-6 col-xs-12 text-right">
+              <!-- <div class="col-md-6 col-xs-12 text-right">
                 <div class="powerd_text">
                   <p>
                     Powerd by
@@ -1553,7 +1536,7 @@
                     Marketing Studio Pvt Ltd.
                   </p>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
